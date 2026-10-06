@@ -5,7 +5,24 @@ labels: ["innovation"]
 body:
   - type: markdown
     attributes:
-      value: "L'idée arrive en Backlog. Ajoute un label `domaine:*` à droite."
+      value: "L'idée arrive en Backlog."
+  - type: dropdown
+    id: domaine
+    attributes:
+      label: Domaine
+      description: Le label correspondant est ajouté automatiquement.
+      options:
+        - "restaurateur — onboarding, liaison d'un restaurant, menus, plats"
+        - "compte — inscription, connexion, profil"
+        - "ia — analyse IA, allergènes, import de menu"
+        - "carte — carte et recherche de restaurants"
+        - "paiement — paywall, abonnements"
+        - "boutique — commandes, livraison"
+        - "social — créateurs, avis, contenus partagés"
+        - "config — projets Firebase, clés d'API, flavors"
+        - "technique — build, CI, environnement de dev (Flutter, Xcode, CocoaPods)"
+    validations:
+      required: true
   - type: textarea
     id: idee
     attributes:

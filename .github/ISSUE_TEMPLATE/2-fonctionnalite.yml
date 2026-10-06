@@ -2,9 +2,23 @@ name: ✨ Fonctionnalité
 description: Une nouveauté ou une amélioration qu'on a décidé de faire.
 type: Feature
 body:
-  - type: markdown
+  - type: dropdown
+    id: domaine
     attributes:
-      value: "Pense à ajouter un label `domaine:*` à droite."
+      label: Domaine
+      description: Le label correspondant est ajouté automatiquement.
+      options:
+        - "restaurateur — onboarding, liaison d'un restaurant, menus, plats"
+        - "compte — inscription, connexion, profil"
+        - "ia — analyse IA, allergènes, import de menu"
+        - "carte — carte et recherche de restaurants"
+        - "paiement — paywall, abonnements"
+        - "boutique — commandes, livraison"
+        - "social — créateurs, avis, contenus partagés"
+        - "config — projets Firebase, clés d'API, flavors"
+        - "technique — build, CI, environnement de dev (Flutter, Xcode, CocoaPods)"
+    validations:
+      required: true
   - type: textarea
     id: besoin
     attributes:

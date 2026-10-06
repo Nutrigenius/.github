@@ -1,0 +1,35 @@
+name: 🐛 Bug
+description: Quelque chose ne marche pas comme prévu.
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: "Pense à ajouter un label `domaine:*` à droite (et `sécurité` si c'est une faille)."
+  - type: textarea
+    id: symptome
+    attributes:
+      label: Symptôme
+      description: Ce qui se passe, et ce qui devrait se passer.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduire
+    attributes:
+      label: Comment le reproduire
+      placeholder: "1. Ouvrir… 2. Cliquer sur… 3. …"
+  - type: dropdown
+    id: environnement
+    attributes:
+      label: Où ça arrive
+      options: ["App en dev (flavor dev)", "App en prod (flavor prod)", "Les deux", "Côté serveur / Cloud Functions", "Je ne sais pas"]
+    validations:
+      required: true
+  - type: input
+    id: ou
+    attributes:
+      label: Écran, fichier ou fonction concerné
+  - type: textarea
+    id: piste
+    attributes:
+      label: Piste
+      description: Cause supposée ou idée de correction, si tu en as une.

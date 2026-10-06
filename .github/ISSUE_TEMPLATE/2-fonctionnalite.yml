@@ -1,0 +1,26 @@
+name: ✨ Fonctionnalité
+description: Une nouveauté ou une amélioration qu'on a décidé de faire.
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: "Pense à ajouter un label `domaine:*` à droite."
+  - type: textarea
+    id: besoin
+    attributes:
+      label: Besoin
+      description: Pour qui, et pourquoi.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Ce qu'on fait
+      description: Comportement attendu, écrans concernés.
+    validations:
+      required: true
+  - type: textarea
+    id: dependances
+    attributes:
+      label: Dépendances
+      description: Autre issue, fonction à déployer, ordre de merge…

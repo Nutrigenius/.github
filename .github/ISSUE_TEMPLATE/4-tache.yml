@@ -1,0 +1,18 @@
+name: 🔧 Tâche
+description: Travail technique, déploiement, outillage, ménage.
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: "Pense à ajouter un label `domaine:*` à droite. Pour un déploiement, remplis le champ Prod dans le projet."
+  - type: textarea
+    id: quoi
+    attributes:
+      label: Quoi
+    validations:
+      required: true
+  - type: textarea
+    id: comment
+    attributes:
+      label: Comment / commandes
+      description: Étapes, ordre, prérequis.

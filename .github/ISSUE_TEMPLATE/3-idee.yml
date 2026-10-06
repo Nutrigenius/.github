@@ -1,0 +1,23 @@
+name: 💡 Idée
+description: Une idée pas encore décidée, à discuter.
+type: Feature
+labels: ["innovation"]
+body:
+  - type: markdown
+    attributes:
+      value: "L'idée arrive en Backlog. Ajoute un label `domaine:*` à droite."
+  - type: textarea
+    id: idee
+    attributes:
+      label: L'idée
+    validations:
+      required: true
+  - type: textarea
+    id: pourquoi
+    attributes:
+      label: Pourquoi ce serait utile
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions ou limites
+      description: Ce qu'il faudrait trancher avant de se lancer.

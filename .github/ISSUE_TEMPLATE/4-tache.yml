@@ -4,7 +4,10 @@ type: Task
 body:
   - type: markdown
     attributes:
-      value: "Pense à ajouter un label `domaine:*` à droite. Pour un déploiement, remplis le champ Prod dans le projet."
+      value: |
+        Pense à ajouter un label `domaine:*` à droite.
+
+        **Pour une mise en prod** : dans le projet, mets le champ **Prod** à « À déployer », et rattache cette tâche au sujet concerné en sous-issue. Elle sortira du Tableau et apparaîtra dans la vue « À déployer en prod ».
   - type: textarea
     id: quoi
     attributes:
